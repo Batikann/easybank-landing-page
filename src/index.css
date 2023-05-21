@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-public-sans;
+  }
+}
+
+@layer components {
+  .box {
+    @apply flex flex-col items-center justify-center gap-3 lg:items-start lg:gap-6;
+  }
+
+  .box h3 {
+    @apply text-xl text-dark-blue lg:text-2xl;
+  }
+
+  .box p {
+    @apply text-gray-400 text-sm leading-relaxed;
+  }
+
+  .article-box {
+    @apply shadow flex flex-col gap-3 rounded-lg;
+  }
+
+  .article-box img {
+    @apply rounded-t-lg h-52;
+  }
+
+  .article-box div {
+    @apply block mx-auto text-sm py-4 px-7 pb-11;
+  }
+
+  .article-box h3 {
+    @apply text-lg mb-2 text-dark-blue leading-tight;
+  }
+
+  .article-box h4 {
+    @apply text-xs text-gray-400 mb-2;
+  }
+
+  .article-box p {
+    @apply text-sm text-gray-400;
+  }
+  .btn {
+    @apply text-white bg-gradient-to-r rounded-full from-lime-green to-bright-cyan py-2  px-6 font-normal;
+  }
+}
