@@ -54,10 +54,14 @@
     @apply text-sm text-gray-400;
   }
   .btn {
-    @apply text-white bg-gradient-to-r rounded-full from-lime-green to-bright-cyan py-2  px-6 font-bold text-sm;
+    @apply text-white bg-gradient-to-r rounded-full from-lime-green to-bright-cyan py-2  px-6 font-bold text-sm hover:opacity-60;
   }
 
   .footer-ul {
     @apply flex flex-col gap-4 text-white text-center md:text-left text-sm;
+  }
+
+  .footer-ul li a {
+    @apply hover:text-lime-green transition-colors duration-300;
   }
 }
