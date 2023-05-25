@@ -5,7 +5,7 @@ import api from '../assets/icon-api.svg'
 
 function Info() {
   return (
-    <div className="bg-very-light-gray px-10 py-20 text-center lg:text-left lg:px-5  ">
+    <div className="bg-very-light-gray px-10 py-44 text-center lg:text-left lg:px-5  ">
       <div className="block mx-auto lg:max-w-7xl">
         <div className="mb-12">
           <h2 className="text-3xl mb-3 text-dark-blue">Why choose Easybank?</h2>
