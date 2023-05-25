@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         'public-sans': ['Public Sans', 'sans-serif'],
       },
+      backgroundImage: (theme) => ({
+        'hero-pattern': 'url(./src/assets/bg-intro-desktop.svg)',
+        'herro-pattern-mobile': 'url(./src/assets/bg-intro-mobile.svg)',
+      }),
     },
   },
   plugins: [],

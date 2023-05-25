@@ -14,7 +14,7 @@ function Info() {
             financial hub. Control your finances like never before.
           </p>
         </div>
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-6">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 md:gap-12 lg:gap-6">
           <div className="box">
             <img src={online} alt="" />
             <h3>Online Banking</h3>

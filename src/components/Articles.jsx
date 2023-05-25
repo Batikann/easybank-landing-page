@@ -10,7 +10,7 @@ const Articles = () => {
         <h2 className="text-3xl text-dark-blue text-center mb-8 lg:text-left">
           Latest Articles
         </h2>
-        <div className="flex flex-col gap-8 lg:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 ">
           <div className="article-box">
             <img src={curreny} alt="" />
             <div>

@@ -1,29 +1,29 @@
 import mobileImg from '../assets/bg-intro-mobile.svg'
 import mockup from '../assets/image-mockups.png'
+import desktopImg from '../assets/bg-intro-desktop.svg'
 
 function Hero() {
   return (
-    <div>
-      <div className="relative">
-        <picture>
-          <source
-            media="(min-width:768px )"
-            srcset="../assets/bg-intro-desktop.svg"
-          />
-          <img src={mobileImg} alt="" className="w-full" />
-        </picture>
-        <img src={mockup} alt="" className="absolute top-0 hidden" />
+    <div className="relative overflow-hidden">
+      <div className="bg-hero-pattern hidden w-full h-screen bg-no-repeat bg-right absolute -right-[25%] -top-[5%]">
+        <img
+          src={mockup}
+          alt=""
+          className="absolute lg:-top-[16%] lg:-right-[15%] hidden"
+        />
       </div>
-      <div className="py-20 px-10  text-center block mx-auto  ">
-        <h1 className="text-3xl text-dark-blue">
-          Next generation digital banking
-        </h1>
-        <p className="text-gray-400 mt-6 text-sm">
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <button className="btn mt-8">Request Invite</button>
+      <div className="py-56 px-5 max-w-7xl mx-auto relative flex justify-between">
+        <div className="flex flex-col gap-8 items-start max-w-md">
+          <h1 className="text-5xl text-dark-blue font-normal">
+            Next generation digital banking
+          </h1>
+          <p className="text-base text-gray-500">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button className="btn ">Request Invite</button>
+        </div>
       </div>
     </div>
   )

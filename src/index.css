@@ -8,6 +8,9 @@
   html {
     @apply font-public-sans;
   }
+  body {
+    @apply overflow-x-hidden;
+  }
 }
 
 @layer components {
@@ -19,16 +22,20 @@
     @apply text-xl text-dark-blue lg:text-2xl;
   }
 
+  .navbar-link {
+    @apply hover:text-lime-green md:text-base transition-colors duration-300 text-lg;
+  }
+
   .box p {
     @apply text-gray-400 text-sm leading-relaxed;
   }
 
   .article-box {
-    @apply shadow flex flex-col gap-3 rounded-lg;
+    @apply shadow flex flex-col gap-3 rounded-lg lg:hover:scale-105 lg:cursor-pointer;
   }
 
   .article-box img {
-    @apply rounded-t-lg h-52;
+    @apply rounded-t-lg h-52 object-cover;
   }
 
   .article-box div {
@@ -47,6 +54,10 @@
     @apply text-sm text-gray-400;
   }
   .btn {
-    @apply text-white bg-gradient-to-r rounded-full from-lime-green to-bright-cyan py-2  px-6 font-normal;
+    @apply text-white bg-gradient-to-r rounded-full from-lime-green to-bright-cyan py-2  px-6 font-bold text-sm;
+  }
+
+  .footer-ul {
+    @apply flex flex-col gap-4 text-white text-center md:text-left text-sm;
   }
 }
